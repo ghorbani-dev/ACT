@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ACT — Shortcut Manager</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="header">
+    <div class="title">ACT</div>
+    <div class="meta">Author: Mohammad Ghorbani — <a href="mailto:ghorbani.dev@gmail.com">ghorbani.dev@gmail.com</a></div>
+  </header>
+
+  <main class="container">
+    <div class="controls">
+      <input id="searchInput" placeholder="جستجو میان شورتکات‌ها..." />
+      <input id="shortcutKey" placeholder="شورتکات (مثلا :brb)" />
+      <input id="shortcutCategory" placeholder="دسته (مثلا General)" />
+      <textarea id="shortcutValue" placeholder="HTML مجاز است — مثلا &lt;b&gt;Bold&lt;/b&gt;"></textarea>
+      <div class="buttons">
+        <button id="addShortcut" class="btn primary">افزودن / بروزرسانی</button>
+        <button id="exportShortcuts" class="btn">خروجی (Export)</button>
+        <button id="importShortcuts" class="btn">ورودی (Import)</button>
+        <input type="file" id="importFile" accept=".json" style="display:none" />
+      </div>
+    </div>
+
+    <section class="preview-area">
+      <h4>پیش‌نمایش</h4>
+      <div id="preview" class="preview">Nothing to preview...</div>
+    </section>
+
+    <section class="list-area">
+      <h4>شورتکات‌های موجود</h4>
+      <ul id="shortcutList" class="list"></ul>
+    </section>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
