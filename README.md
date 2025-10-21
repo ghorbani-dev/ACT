@@ -10,7 +10,7 @@ A simple and elegant Chrome extension that expands custom text shortcuts into fu
 
 \- Add, edit, and delete shortcuts  
 
-\- Supports HTML tags (e.g. `<b>Hello</b>`)  
+\- Supports HTML tags (e.g. `<b>Hello</b>`) & (e.g <a href="safesho.com"safesho.com</a>) 
 
 \- Modern and minimal UI  
 
